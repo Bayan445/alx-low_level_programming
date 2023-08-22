@@ -16,7 +16,7 @@ int _isupper(int c)
 }
 
 
-0-main.c
+0 - main.c
 #include "main.h"
 #include <stdio.h>
 
@@ -27,17 +27,17 @@ int _isupper(int c)
  */
 int main(void)
 {
-    char c;
+	char c;
 
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+	c = 'A';
+	printf("%c: %d\n", c, _isupper(c));
+	c = 'a';
+	printf("%c: %d\n", c, _isupper(c));
+	return (0);
 }
 
 
-1-isdigit.c
+1 - isdigit.c
 
 #include "main.h"
 
