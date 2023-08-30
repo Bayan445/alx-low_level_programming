@@ -1,6 +1,11 @@
 
 
 #include "main.h"
+/**
+ * main - Entry point
+ * Descreption: prints some useless characters
+ * Return: always 0 (Success)
+ */
 
 
 int main(void)
@@ -14,7 +19,6 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 
-
-       	return 0;
+	return (0);
 
 }
