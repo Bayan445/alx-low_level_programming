@@ -1,5 +1,7 @@
 
+#include <unistd.h>
 #include "main.h"
+
 /**
  * main - Entry point
  * Descreption: A program that prints the alphabet in lowercase
@@ -11,11 +13,11 @@ int main(void)
 {
 	void print_alphabet(void);
 	{
-		int EA;
+		int ea;
 
-		for (EA = 'a'; EA <= 'z'; EA++)
+		for (ea = 'a'; ea <= 'z'; ea++)
 		{
-			_putchar(EA);
+			_putchar(ea);
 			_putchar('\n');
 		}
 	}
