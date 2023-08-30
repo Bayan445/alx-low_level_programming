@@ -16,6 +16,7 @@ int main(void)
 		for (EA = 'a'; EA <= 'z'; EA++)
 		{
 			putchar(EA);
+			putchar('\n');
 		}
 	}
 
