@@ -1,32 +1,19 @@
-
 #include "main.h"
+
 /**
- * main - Entry point
- * Descreption: prints some useless characters
- * Return: always 0 (Success)
- */
-
-
-int main(void)
+ * print_alphabet_x10 - print 10 times by function
+ *
+ *
+ *
+*/
+void print_alphabet_x10(void)
 {
-	void print_alphabet_x10(void);
+	int line, ch;
+
+	for (line = 0; line <= 9; line++)
 	{
-		int i;
-
-		for (i = 0 ; i < 10 ; i++)
-		{
-		int ea;
-
-		for (ea = 'a'; ea <= 'z'; ea++)
-		{
-			_putchar(ea);
-			_putchar('\n');
-		}
-		}
+		for (ch = 'a'; ch <= 'z'; ch++)
+			_putchar(ch);
+		_putchar('\n');
 	}
-
-	return (0);
-
-
-
 }
