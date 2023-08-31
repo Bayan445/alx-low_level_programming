@@ -11,11 +11,10 @@ int main(void)
 {
 	void print_alphabet_x10(void);
 	{
-		int i;
+		int i,ea;
 
 		for (i = 0 ; i < 10 ; i++)
 		{
-		int ea;
 
 		for (ea = 'a'; ea <= 'z'; ea++)
 		{
