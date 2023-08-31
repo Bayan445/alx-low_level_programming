@@ -19,8 +19,8 @@ int main(void)
 
 		for (ea = 'a'; ea <= 'z'; ea++)
 		{
-			_putchar(ea);
-			_putchar('\n');
+			putchar(ea);
+			putchar('\n');
 		}
 		}
 	}
