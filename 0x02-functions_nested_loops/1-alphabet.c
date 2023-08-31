@@ -1,27 +1,20 @@
 
+
 #include "main.h"
 
+
 /**
- * main - Entry point
- * Descreption: A program that prints the alphabet in lowercase
- * Return: always 0 (Success)
- */
+ * print_alphabet -utilizes on the _putchar function to print
+ *                 the alphabet a - z
+ * _putchar using it only twice
+*/
 
-
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void);
-	{
-		int ch;
+	int ch;
 
-		for (ch = 'a'; ch <= 'z'; ch++)
-		{
-			_putchar(ch);
-			_putchar('\n');
-		}
-	}
-
-	return (0);
-
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
+	_putchar('\n');
 
 }
