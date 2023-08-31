@@ -1,5 +1,4 @@
 
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -13,11 +12,11 @@ int main(void)
 {
 	void print_alphabet(void);
 	{
-		int ea;
+		int ch;
 
-		for (ea = 'a'; ea <= 'z'; ea++)
+		for (ch = 'a'; ch <= 'z'; ch++)
 		{
-			_putchar(ea);
+			_putchar(ch);
 			_putchar('\n');
 		}
 	}
