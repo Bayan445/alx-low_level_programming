@@ -6,13 +6,10 @@
  * Return: always 0 (Success)
  */
 
-int main(void)
-{
-
 	int _isupper(int c)
 	{
-	c = 'A';
-	if (_isupper(c))
+
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
@@ -21,4 +18,4 @@ int main(void)
 		return (0);
 	}
 	}
-}
+
