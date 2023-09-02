@@ -9,7 +9,7 @@
 int main(void)
 {
 	char c;
-
+	
 	c = 'a';
 	if (_isupper(c))
 	{
