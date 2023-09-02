@@ -1,17 +1,22 @@
 #include "main.h"
 
 /**
- * _isupper - uppercase letters
- * @c: char to check
- *
- * Return: 0 or 1
+ * main - Entry point
+ * Descreption: checks if the character is capital or not
+ * Return: always 0 (Success)
  */
 
-int _isupper(int c)
+int main(void)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-	else
-		return (0);
-}
+	char c;
 
+	if (_isupper(c))
+	{
+		printf("1");
+	}
+	else
+	{
+		printf("0");
+	}
+	return (0);
+}
