@@ -8,16 +8,17 @@
 
 int main(void)
 {
-	char c;
-	
-	c = 'a';
+
+	int _isupper(int c)
+	{
+	c = 'A';
 	if (_isupper(c))
 	{
-		printf("1");
+		return (1);
 	}
 	else
 	{
-		printf("0");
+		return (0);
 	}
-	return (0);
+	}
 }
