@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * main - the first function
  * print_numbers - check the code
- *
+ * Descreption: a function that prints the numbers
  * Return: Always 0.
  */
 
