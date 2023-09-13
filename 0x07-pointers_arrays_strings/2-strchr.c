@@ -4,7 +4,7 @@
  * @s: starting address of memory to be filled
  * @c: the desired value
  *
- * Return: changed array with new value for n bytes
+ * Return: Always 0 (Success)
  */
 
 char *_strchr(char *s, char c)
