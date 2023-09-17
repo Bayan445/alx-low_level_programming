@@ -4,7 +4,9 @@
  * _pow_recursion - a power function give power of number
  *
  * @x: adigit to expression
- * @y: a digit wich is the power 
+ * @y: a digit wich is the power.
+ *
+ * Return: pointer to the byte
  */
 
 int _pow_recursion(int x, int y)
