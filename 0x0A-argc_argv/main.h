@@ -1,8 +1,10 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef HEADER_FILE
+#define HEADER_FILE
+
+#include <stdio.h>
 
 int _putchar(char c);
-int _atoi(char *s);
+int main(int argc, char *argv[]);
+
 
 #endif
-
