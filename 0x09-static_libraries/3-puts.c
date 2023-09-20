@@ -1,14 +1,15 @@
 #include "main.h"
+#include <string.h>
+
+
 /**
- * _puts - prints a string, followed by a new line, to stdout
- * @str: string to print
+ * _puts - a function tha tell the size
+ * @str:a pointer name.
+ * Return: (0) Always
  */
+
 void _puts(char *str)
 {
-	while (*str != '\0')
-	{
-		_putchar(*str++);
-	}
-		_putchar('\n');
-}
+	puts(str);
 
+}

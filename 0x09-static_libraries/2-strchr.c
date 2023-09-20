@@ -1,21 +1,22 @@
 #include "main.h"
-#include <stddef.h>
-
 /**
- * _strchr - Entry point
- * @s: input
- * @c: input
+ * _strchr - fill a block of memory with a specific value
+ * @s: starting address of memory to be filled
+ * @c: the desired value
+ *
  * Return: Always 0 (Success)
  */
+
 char *_strchr(char *s, char c)
 {
-	int i = 0;
+	int i;
 
-	for (; s[i] >= '\0'; i++)
+	for (i = 0; s[i] >= '\0'; i++)
 	{
 		if (s[i] == c)
-			return (&s[i]);
-	}
-	return (0);
-}
 
+		return (&s[i]);
+	}
+
+	return (NULL);
+}

@@ -1,1 +1,1 @@
- read my mind 
+ a written file to be readed 
