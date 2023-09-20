@@ -1,4 +1,7 @@
+
 #include "main.h"
+#include <stddef.h>
+
 /**
  * _strchr - fill a block of memory with a specific value
  * @s: starting address of memory to be filled
@@ -18,5 +21,5 @@ char *_strchr(char *s, char c)
 		return (&s[i]);
 	}
 
-	return (NULL);
+	return NULL;
 }
