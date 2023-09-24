@@ -6,8 +6,11 @@
 /**
  * _strdup - the function i will serach so i know what it does
  *
- * @str: i will modify this idk
+ * Description - here we the sunction copy and allocate a string
  *
+ * @str: a variable we will make copy from it
+ *
+ * Return: a copy from a pointer to string
  */
 
 char *_strdup(char *str)
@@ -19,6 +22,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
+
+	/* the +1 here is for the null terminator /0 at the end of string*/
+
 	yenistr = malloc(sizeof(char) * strlen(str));
 
 	if (yenistr == NULL)
