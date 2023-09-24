@@ -25,7 +25,7 @@ char *_strdup(char *str)
 
 	/* the +1 here is for the null terminator /0 at the end of string*/
 
-	yenistr = malloc(sizeof(char) * strlen(str));
+	yenistr = malloc(sizeof(char) * strlen(str) + 1);
 
 	if (yenistr == NULL)
 	{
