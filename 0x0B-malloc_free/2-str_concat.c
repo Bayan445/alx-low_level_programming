@@ -17,20 +17,18 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *taymaa;
-	int len1;
-	int len2;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (NULL);
+		s1 = "";
 	}
 
-	/**** callculate length of input strings******/
-	len1 = strlen(s1);
-	len2 = strlen(s2);
+	if (s2 == NULL)
+	{
+		s2  = "";
+	}
 
-
-	taymaa = malloc(len1 + len2 + 1);
+	taymaa = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (taymaa == NULL)
 	{
