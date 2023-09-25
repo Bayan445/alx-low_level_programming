@@ -29,9 +29,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	
+
 	strcpy(taymaa, s1);
-        strcat(taymaa, s2);
+	strcat(taymaa, s2);
 
 	return (taymaa);
 }
