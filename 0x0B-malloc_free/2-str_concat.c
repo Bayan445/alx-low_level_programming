@@ -16,12 +16,14 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	char *taymaa;
+
 	if (s1 == NULL || s2 == NULL)
 	{
 		return (NULL);
 	}
 
-	char *taymaa = malloc(strlen(s1) + strlen(s2) + 1);
+	taymaa = malloc(strlen(s1) + strlen(s2) + 1);
 
 	strcpy(taymaa, s1);
 	strcat(taymaa, s2);
