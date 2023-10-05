@@ -3,35 +3,32 @@
 #include <stdio.h>
 
 /**
- * main - Prints the last digit of a randomly generated number
- * and whether it is greater than 5, less than 6, or 0.
+ * main - the entry point of the program 
  *
- * Return: Always 0.
+ * Return: always 0.
  */
+
 int main(void)
 {
 	int n;
+	int taymaa;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	taymaa = n % 10;
 
-	if ((n % 10) > 5)
+	if (taymaa > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n",
-			n, n % 10);
+		printf("the last digit of %d is %d and is greater than 5 \n", n, taymaa);
 	}
-	else if ((n % 10) < 6 && (n % 10) != 0)
+	if (taymaa == 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n",
-			n, n % 10);
+		printf("the last digit of %d is %d and is 0\n", n, taymaa);
 	}
-	else
+	if (taymaa < 6 && taymaa != 0)
 	{
-		printf("Last digit of %d is %d and is 0\n",
-			n, n % 10);
+		printf("the last digit of %d is %d and is less than 6 and not 0 \n", n, taymaa);
 	}
 
 	return (0);
-
 }
-
