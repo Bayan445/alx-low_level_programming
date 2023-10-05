@@ -7,17 +7,21 @@
  */
 int main(void)
 {
-	int i;
+	char moh;
+	char bar;
 
-	for (i = 48; i < 58; i++)
+	for (moh = '0'; moh <= '9'; moh++)
 	{
-		putchar(i);
+		putchar (moh);
 	}
-	for (i = 97; i < 103; i++)
+
+	for (bar = 'a'; bar <= 'f'; bar++)
 	{
-		putchar(i);
+		putchar (bar);
 	}
-	putchar('\n');
+	putchar ('\n');
+
 	return (0);
+
 }
 
