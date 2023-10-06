@@ -9,18 +9,18 @@
  */
 int _isalpha(int c)
 {
-        char E;
+	char E;
 	char B;
 
-        for (E = 'a'; E <= 'z'; E++)
-        {
+	for (E = 'a'; E <= 'z'; E++)
+	{
 		for (B = 'A'; B <= 'Z'; B++)
 		{
 			if (c == E || c == B)
-			return(1);
-		}
 
+				return (1);
+		}
 	}
 
-	return(0);
+	return (0);
 }
