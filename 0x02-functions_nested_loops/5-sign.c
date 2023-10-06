@@ -1,11 +1,13 @@
 #include "main.h"
 
 /**
+ * print_sign - it  prints the sign of a number.
  *
+ * @n: a number to be checked.
  *
- *
- *
+ * Return: it reurns -1 and 0 and 1 too
  */
+
 
 int print_sign(int n)
 {
@@ -19,7 +21,7 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-	else 
+	else
 	{
 		_putchar('-');
 	}
