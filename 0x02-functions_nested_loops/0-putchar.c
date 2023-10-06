@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
+ * main - I will print char by char a string
  *
  *
  *
- *
- *
+ * Return: always 0.
  */
 
 int main(void)
@@ -20,5 +20,5 @@ int main(void)
 	}
 
 	_putchar('\n');
-	return(0);
+	return (0);
 }
