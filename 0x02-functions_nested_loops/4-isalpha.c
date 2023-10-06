@@ -9,6 +9,18 @@
  */
 int _isalpha(int c)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
-}
+        char E;
+	char B;
 
+        for (E = 'a'; E <= 'z'; E++)
+        {
+		for (B = 'A'; B <= 'Z'; B++)
+		{
+			if (c == E || c == B)
+			return(1);
+		}
+
+	}
+
+	return(0);
+}
