@@ -1,15 +1,18 @@
 #include "main.h"
 
+
 /**
- * mul - the main function
- * @a: number to check
- * @b: number to multi
- * Descreption: checks if the character is capital or not
- * Return:  0 (Success)
+ * mul - a function that multiplies two integers.
+ *
+ * @a: an integer to be mlutyplied
+ * @b: just like above
+ *
+ * Return: it returns value of L.
  */
 
 int mul(int a, int b)
 {
-	return (a * b);
+	int L = a * b;
 
+	return (L);
 }
