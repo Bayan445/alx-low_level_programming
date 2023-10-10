@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
+ * print_line - print a straight line
+ *
+ * @n: is the number of times the _ character
+ *	should be printed
  *
  *
- *
- *
- *
- *
- */
+*/
 
 void print_line(int n)
 {
@@ -17,10 +17,13 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-	for (tot = 1; tot < n; tot++)
+	else
 	{
-		_putchar('_');
+		for (tot = 1; tot < n; tot++)
+		{
+			_putchar('_');
+		}
+			_putchar('\n');
 	}
-	_putchar('\n');
 }
 
