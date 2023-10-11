@@ -12,18 +12,14 @@
 
 void print_line(int n)
 {
-	int tot;
+	int lnchr;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
-	}
 	else
 	{
-		for (tot = 1; tot < n; tot++)
-
+		for (lnchr = 1; lnchr <= n; lnchr++)
 			_putchar('_');
 		_putchar('\n');
 	}
 }
-
