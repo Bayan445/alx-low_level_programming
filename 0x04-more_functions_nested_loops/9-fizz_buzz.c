@@ -20,9 +20,9 @@ int main(void)
 		if (num == 1)
 			printf("1");
 		else if (num % 5 == 0 && num % 3 == 0)
-                {
-                        printf(" FizzBuzz");
-                }
+		{
+			printf(" FizzBuzz");
+		}
 		else if (num % 3 == 0)
 		{
 			printf(" Fizz");
