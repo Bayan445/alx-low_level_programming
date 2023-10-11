@@ -21,10 +21,8 @@ void print_line(int n)
 	else
 	{
 		for (tot = 1; tot < n; tot++)
-		{
+
 			_putchar('_');
-		}
-		
 		_putchar('\n');
 	}
 }
