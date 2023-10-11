@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
+ * print_square - print a square using the character #
+ *
+ * @size: is the size of the square
+ *
+ * Return: Always 0 (Success)
  *
  *
- *
- *
- *
- *
- *
- *
- */
+*/
 
 void print_square(int size)
 {
@@ -19,7 +18,7 @@ void print_square(int size)
 	{
 		_putchar('\n');
 	}
-	
+
 	else
 		for (ard = 0; ard < size; ard++)
 		{
