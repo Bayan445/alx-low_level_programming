@@ -9,24 +9,24 @@
  *
 */
 
+
 void print_diagonal(int n)
 {
-	int Br, op;
 
-	for (Br = 0; Br < n; Br++)
+	int s;
+
+	if (n <= 0)
 	{
-		if (n <= 0)
-		{
-			_putchar('\n');
-		}
-		else 
-		{
-			for (op = 1; op <= n; op++)
-			{
-				_putchar(' ');
-				_putchar('\\');
-			}
-		}
-	}
 		_putchar('\n');
+	}
+	
+	for (s = 1; s <= n; s++)
+	{
+		_putchar(' ');
+	}
+
+	_putchar('\\');
+	_putchar('\n');
+
 }
+
