@@ -2,25 +2,24 @@
 #include <string.h>
 
 /**
- * puts2 - Reverses a string
- * @str: Input string
+ * puts2 - a function that prints the
+ * characters one yes one no
+ *
+ * @str: a string to be printed in our way
+ *
  */
 
 void puts2(char *str)
 {
-	int i;
-	int length;
-
+	int length, i;
 
 	length = strlen(str);
-
-	for (i = 0; i <= length - 1; i++)
+	for (i = 0; i < length; i++)
 	{
-		if (i % 2 == 0)
+		if (i == 0 || i % 2 == 0)
 		{
 			_putchar(str[i]);
 		}
 	}
 	_putchar('\n');
 }
-
