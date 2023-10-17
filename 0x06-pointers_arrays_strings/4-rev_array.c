@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * reverse_array - reverse array of integers
  * @a: array
@@ -6,16 +7,17 @@
  *
  * Return: void
  */
+
 void reverse_array(int *a, int n)
 {
-	int i;
-	int t;
+	int eb, box;
 
-	for (i = 0; i < n--; i++)
+	for (eb = 0; eb < n; eb++)
 	{
-		t = a[i];
-		a[i] = a[n];
-		a[n] = t;
-	}
-}
 
+		box = a[eb];
+		a[eb] = a[n];
+		a[n] = box;
+	}
+
+}
