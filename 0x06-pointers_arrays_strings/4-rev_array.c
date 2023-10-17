@@ -18,8 +18,8 @@ void reverse_array(int *a, int n)
 	{
 
 		box = a[eb];
-		a[eb] = a[n];
-		a[n] = box;
+		a[eb] = a[r];
+		a[r] = box;
 	}
 
 }
