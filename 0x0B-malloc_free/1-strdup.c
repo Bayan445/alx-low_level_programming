@@ -22,12 +22,19 @@ char *_strdup(char *str)
 		return (NULL);
 
 	leng = strlen(str);
-
+	/*
+	 * here we are allocating space for our str and newpo
+	 * points to this new allocated memory
+	 */
 	newpo = malloc(sizeof(char) * leng + 1);
 
 	if (newpo == NULL)
 		return (NULL);
 
+	/*
+	 * here we copy the content of str to newpo wich has
+	 * free memory places so we put str content in it
+	 */
 	strcpy(newpo, str);
 
 	return (newpo);
