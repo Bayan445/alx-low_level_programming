@@ -3,10 +3,12 @@
 #include <string.h>
 
 /**
+ * _strdup - a function that takes a copy from a pointer to
+ * string and then allocate memory to it
  *
+ * @str: a string to be copied
  *
- *
- *
+ * Return: the new allocated string which is copy
  */
 
 char *_strdup(char *str)
