@@ -27,6 +27,9 @@ char *str_concat(char *s1, char *s2)
 	lens2 = strlen(s2);
 	newv = malloc(sizeof(char) * (lens1 + lens2 + 1));
 
+	if (newv == NULL)
+		return (NULL);
+
 	for (i = 0; i < lens1; i++)
 	{
 		newv[i] = s1[i];
