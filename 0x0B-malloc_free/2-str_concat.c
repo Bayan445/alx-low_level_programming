@@ -18,9 +18,9 @@ char *str_concat(char *s1, char *s2)
 
 	/*checking if parameters are empty*/
 	if (s1 == NULL)
-		return (" ");
+		s1 = "";
 	if (s2 == NULL)
-		return (" ");
+		s2 = "";
 
 	/*allocating right amount of memory*/
 	lens1 = strlen(s1);
