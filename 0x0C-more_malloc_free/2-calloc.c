@@ -19,10 +19,10 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 
 	him = malloc(nmemb * size);
-	memset(him, 0, size);
-
 	if (him == NULL)
 		return (NULL);
+
+	memset(him, 0, nmemb * size);
 
 	return (him);
 }
