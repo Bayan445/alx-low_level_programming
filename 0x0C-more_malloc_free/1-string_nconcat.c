@@ -1,4 +1,6 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * string_nconcat - a function that concatenates two strings.
@@ -9,38 +11,42 @@
  *
  * Return: If the function fails, it should return NULL
  */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int x, y, z;
-	char *s;
+	char *pois;
+	int e, b;
+	unsigned int r;
 
 	if (s1 == NULL)
-	{
-		x = 0;
-	}
-	else
-	{
-		for (x = 0; s1[x]; ++x)
-		;
-	}
+		s1 = "";
 	if (s2 == NULL)
+		s2 = "";
+
+	r = strlen (s2);
+	b = strlen (s1);
+	pois = malloc (sizeof(char) * (b + n + 1));
+
+	if (pois == NULL)
+		return(NULL);
+
+	/*copying s1 elements to new allocated pointer*/
+	for (e = 0; e < b; e++)
 	{
-		y = 0;
+		if (s1[e] != '\0')
+			pois[e] = s1[e];
 	}
-	else
+
+	/*copying s2 elements to new allocated pointer*/
+	for (r = 0; r < n && s2[r] != '\0'; r++)
 	{
-		for (y = 0; s2[y]; ++y)
-		;
+		pois[e] = s2[r];
+		e++;
 	}
-	if (y > n)
-		y = n;
-	s = malloc(sizeof(char) * (x + y + 1));
-	if (s == NULL)
-		return (NULL);
-	for (z = 0; z < x; z++)
-		s[z] = s1[z];
-	for (z = 0; z < y; z++)
-		s[z + x] = s2[z];
-	s[x + y] = '\0';
-	return (s);
+	
+	pois[e] = '\0';
+
+	return (pois);
+
 }
+
