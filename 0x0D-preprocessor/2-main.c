@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
+ * main - the entry function
  *
- *
- *
+ * Return: always 0.
  */
 
 int main(void)
